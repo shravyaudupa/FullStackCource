@@ -6,20 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Stack Session</title>
     <style>
-       .background{
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        .parent{
            background-color: aquamarine;
-           width: 250px;
-           height: 250px;
-           box-sizing: border-box;         
-           margin-right: 100px;
+           height: 60px;
+           padding: 20px;
+           width: 40vw;
+       }
+
+       .child{
+           background-color: violet;
+           height: 20px;
+           width: 80%;
        }
     </style>
 
 
 </head>
 <body>
-    <div class="background">
-        <h2>Shravya</h2>
+    <div class="parent">
+        <div class="child"></div>
+   
     </div>
     
 </body>
