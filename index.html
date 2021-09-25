@@ -11,35 +11,43 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            margin-top: 10px;
         }
 
-        
-        .child {
-            width: 100px;
-            height: 150px;
+        .background{
+            color: #ffff;
+            background-color: pink;
+        }
+
+        h1.background{
+            background-color: pink;
+        }
+
+        h2.background{
+            background-color: yellow;
+        }
+
+        h2.background#unique{
+            background-color: red;
+        }
+
+        h3.background{
+            background-color: cyan;
+        }
+
+        span.background{
             background-color: orange;
-            margin: 10px;
         }
-        
-        .parent {
-            height: 500px;
-            background-color: black;
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-        
+
     </style>
 </head>
 
 <body>
-    <div class="parent">
-        <div class="child"></div>
-        <div style="background-color: red;" class="child"></div>
-        <div style="background-color: blueviolet;" class="child"></div>
-    </div>
+    <h1 class="background" >Heading one</h1>
+    <h2 id="unique" class="background" >Heading two</h2>
+    <h2 class="background" >Secong Heading two</h2>
+    <h3 class="background" >Heading three</h3>
+    <span class="background" >I'm a span</span>
 </body>
 
 </html>
