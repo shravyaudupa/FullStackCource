@@ -14,10 +14,21 @@
             margin-top: 4px;
         }
 
-        h2 {
+
+        h2:nth-child(1) {
             padding: 5px;
             color: #f1f1f1;
-            background-color: crimson;
+            background-color: cyan;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
+        }
+
+        h2:nth-child(2) {
+            padding: 5px;
+            color: #f1f1f1;
+            background-color: lime;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
         }
 
         h2:hover {
@@ -25,39 +36,14 @@
             cursor: pointer;
         }
 
-        div::selection {
-            background-color: lime;
-        }
-
-        input:focus {
-            background-color: pink;
-            color: purple;
-            font-size: 2rem;
-        }
-
-        h2::after {
-            content: "I'm after";
-            font-size: 0.5rem;
-            color: red;
-            position: relative;
-        }
-
-        h2::before {
-            content: "I'm before";
-            font-size: 0.5rem;
-            color: cyan;
-            position: relative;
-        }
+        
         
     </style>
 </head>
 
 <body>
     <h2>Shravya Udupa</h2>
-    <div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore odit voluptate ab necessitatibus nulla, sed distinctio non aspernatur at ratione veritatis! Eaque debitis dolores qui quisquam aspernatur distinctio in eos.
-    </div>
-    <input type="text" />
+    <h2>Shravya Udupa</h2>
 </body>
 
 </html>
