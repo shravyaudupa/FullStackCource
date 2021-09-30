@@ -1,12 +1,22 @@
-var heading = document.getElementById('heading')
-var body = document.querySelector('body')
+// function greet(name,age){
+//     console.log(name,age)
+//     console.log('Hello')
+// }
 
-console.log(heading)
+// greet('Shravya',19)
 
-heading.innerHTML = "i was added by JS"
-heading.style = "color:red;font-size:2rem"
 
-heading.classList.add('five')
-heading.classList.remove('one')
+// console.log(add(10,20))
 
-body.classList.add('dark')
+// function add(a=0, b=0) {
+//     var sum =a+b
+//     return sum
+// }
+
+var add=(a=0, b=0)=> {
+    var sum =a+b
+    return sum
+}
+console.log(add(10,20))
+
+
