@@ -1,22 +1,13 @@
-// function greet(name,age){
-//     console.log(name,age)
-//     console.log('Hello')
-// }
+var button = document.querySelector('button')
+var input = document.querySelector('input')
+var list = document.querySelector('ul')
 
-// greet('Shravya',19)
-
-
-// console.log(add(10,20))
-
-// function add(a=0, b=0) {
-//     var sum =a+b
-//     return sum
-// }
-
-var add=(a=0, b=0)=> {
-    var sum =a+b
-    return sum
+const callbackfunc =(event) => {
+    const inputValue = input.value
+    const element = document.createElement('li')
+    const textNode = document.createTextNode(inputValue)
+    element.appendChild(textNode)
+    list.appendChild(element)
 }
-console.log(add(10,20))
 
-
+button.addEventListener('click', callbackfunc)
