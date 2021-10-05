@@ -1,9 +1,8 @@
-var body = document.querySelector('body')
-var button = document.querySelector('button')
-
-
-const callbackfunc =(event) => {
-    body.classList.toggle('dark')
-}
-
-button.addEventListener('click', callbackfunc)
+let value= new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        reject('Hello')
+        console.log(value)
+    }, 3000)
+    
+})
+console.log(value)
