@@ -1,9 +1,38 @@
-var body = document.querySelector('body')
-var button = document.querySelector('button')
+const a = document.querySelectorAll('input')[0]
+const b = document.querySelectorAll('input')[1]
+const add = document.querySelector('#add')
+const multiply = document.querySelector('#multiply')
+const resultBox = document.querySelector('.result')
 
-
-const callbackfunc =(event) => {
-    body.classList.toggle('dark')
+const sum = () => {
+    const result= parseInt(a.value) + parseInt(b.value)
+    resultBox.innerHTML= result
 }
 
-button.addEventListener('click', callbackfunc)
+const product = () => {
+    const result= parseInt(a.value) * parseInt(b.value)
+    resultBox.innerHTML= result
+}
+
+const calculate =(op) => {
+    if(op == 'add'){
+        console.log('Adding')
+    } else if (op == 'multiply'){
+        console.log('Multiply')
+    }
+}
+
+
+
+add.addEventListener('click', sum)
+multiply.addEventListener('click', product)
+
+
+add.addEventListener('click', () => {
+    return calculate('add')
+})
+
+multiply.addEventListener('click',() => {
+    return calculate('multiply')
+})
+
