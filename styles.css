@@ -46,40 +46,78 @@ footer{
     width: 400px;
     position: relative;
     top: 100px;
+}
 
-
-    
+.parent2{
+    display: flex;
+    justify-content: space-between;
 }
 .child2{
     color: white;
     font-size: 1.5rem;
+    padding-bottom: 10px;
 }
-.child3 {
-    -webkit-appearance: none;
+
+.switch {
     position: relative;
+    display: inline-block;
     width: 50px;
-    height: 20px;
-    background-color: white;
-    border-radius: 40px;
-    outline: none;
+    height: 24px;
   }
   
-  .child3:before {
-    content: "";
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
     position: absolute;
+    cursor: pointer;
     top: 0;
     left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: navy;
-    border-radius: 50px;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
   }
-.child3{
+  
+  .slider:before {
     position: absolute;
-    right: 10px;
-    top: 5px;
-    
-}
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: gray;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px gray;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 24px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }  
+
 .parent3{
     height: 5%;
     width: 100%;
@@ -122,4 +160,9 @@ footer{
     display: flex;
     justify-content: space-between;
     font-size: 0.9rem;
+}
+
+.dark {
+    background-color: black;
+    color: white;
 }

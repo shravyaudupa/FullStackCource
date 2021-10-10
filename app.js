@@ -1,0 +1,9 @@
+var body = document.querySelector('body')
+var label = document.querySelector('button')
+
+
+const callbackfunc =(event) => {
+    body.classList.toggle('dark')
+}
+
+label.addEventListener('click', callbackfunc)
