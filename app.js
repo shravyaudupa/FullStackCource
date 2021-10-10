@@ -59,8 +59,8 @@
 
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8]
-// var arr_1 = arr.slice(5,7)
-// console.log(arr_1)
+var arr_1 = arr.slice(5,7)
+console.log(arr_1)
 
 
 // var new_arr=[]
@@ -80,5 +80,5 @@ var arr = [1, 2, 3, 4, 5, 6, 7, 8]
 
 
 
-console.log(arr.splice(5, 2))
-console.log(arr)
+// console.log(arr.splice(5, 2))
+// console.log(arr)
