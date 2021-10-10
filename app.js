@@ -1,5 +1,5 @@
 var body = document.querySelector('body')
-var label = document.querySelector('button')
+var label = document.querySelector('label')
 
 
 const callbackfunc =(event) => {
