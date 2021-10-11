@@ -1,12 +1,6 @@
-const path = require('path')
+const fs =require('fs')
+fs.readFile('./text.txt','ucs-2',(error, data)=>{
+    if(error) console.log(error)
+    else console.log( data)
 
-console.log(path.resolve('./app.js'))
-
-// console.log(path.relative('.../','./CSS/util.js'))
-
-// console.log(path.extname('.../','./CSS/util.js'))
-
-// console.log(path.dirname('./CSS/util.js'))
-
-console.log(__dirname)
-
+})
